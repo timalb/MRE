@@ -14,13 +14,13 @@ async def set_main_menu(bot: Bot):
 
     # Создаем список с командами и их описанием для кнопки menu
     main_menu_commands = [
-        BotCommand(command='help',
+        BotCommand(command='/help',
                    description='Справка по работе бота'),
-        BotCommand(command='support',
+        BotCommand(command='/support',
                    description='Поддержка'),
-        BotCommand(command='contacts',
+        BotCommand(command='/contacts',
                    description='Другие способы связи'),
-        BotCommand(command='payments',
+        BotCommand(command='/payments',
                    description='Платежи')]
 
     await bot.set_my_commands(main_menu_commands)
